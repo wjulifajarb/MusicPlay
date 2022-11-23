@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="stilos.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="./headset.png" />
+    <title>Reproductor</title>
+  </head>
+  <body>
+    <div class="player">
+      <!--contenedor pantalla principal-->
+      <div class="player__header">
+        <div class="player__img player__img--absolute slider">
+          <!--boton para menú de barras-->
+          <button class="player__button player__button--absolute--nw playlist">
+            <img src="./playlist.png" alt="playlist-icon" />
+          </button>
+
+          <!--boton para play y pausa-->
+          <button class="player__button player__button--absolute--center play">
+            <img
+              src="http://physical-authority.surge.sh/imgs/icon/play.svg"
+              alt="play-icon"
+            />
+            <img
+              src="http://physical-authority.surge.sh/imgs/icon/pause.svg"
+              alt="pause-icon"
+            />
+          </button>
+
+          <!--imagenes en la parte superior-->
+          <div class="slider__content">
+            <img class="img slider__img" src="./img/1.jpg" alt="cover" />
+            <img class="img slider__img" src="./img/2.jpg" alt="cover" />
+            <img class="img slider__img" src="./img/3.png" alt="cover" />
+            <img class="img slider__img" src="./img/4.webp" alt="cover" />
+            <img class="img slider__img" src="./img/5.jpg" alt="cover" />
+            <img class="img slider__img" src="./img/6.jpg" alt="cover" />
+            <img class="img slider__img" src="./img/7.png" alt="cover" />
+            <img class="img slider__img" src="./img/8.jpg" alt="cover" />
+            <img class="img slider__img" src="./img/9.jpg" alt="cover" />
+            <img class="img slider__img" src="./img/10.jpg" alt="cover" />
+            <img class="img slider__img" src="./img/11.jpg" alt="cover" />
+            <img class="img slider__img" src="./img/12.jpg" alt="cover" />
+            <img class="img slider__img" src="./img/13.jpg" alt="cover" />
+          </div>
+        </div>
+
+        <!--iconos de reproducción pantalla principal-->
+        <div class="player__controls">
+          <button class="player__button back">
+            <img
+              class="img"
+              src="http://physical-authority.surge.sh/imgs/icon/back.svg"
+              alt="back-icon"
+            />
+          </button>
+
+          <p class="player__context slider__context">
+            <strong class="slider__name"></strong>
+            <span class="player__title slider__title"></span>
+          </p>
+
+          <button class="player__button next">
+            <img
+              class="img"
+              src="http://physical-authority.surge.sh/imgs/icon/next.svg"
+              alt="next-icon"
+            />
+          </button>
+
+          <div class="progres">
+            <div class="progres__filled"></div>
+          </div>
+        </div>
+      </div>
+
+      <ul class="player__playlist list">
+        <li class="player__song">
+          <img class="player__img img" src="./img/1.jpg" alt="cover" />
+          <p class="player__context">
+            <b class="player__song-name">Out of love</b>
+            <span class="flex">
+              <span class="player__title">Alessia Cara</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="./music/y2mate.com - Alessia Cara  Out Of Love.mp3"
+          ></audio>
+        </li>
+
+        <li class="player__song">
+          <img class="player__img img" src="./img/2.jpg" alt="cover" />
+          <p class="player__context">
+            <b class="player__song-name">Discord</b>
+            <span class="flex">
+              <span class="player__title">The Living Tombstone</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio class="audio" src="./music/y2mate.com - Discord.mp3"></audio>
+        </li>
+
+        <li class="player__song">
+          <img class="player__img img" src="./img/3.png" alt="cover" />
+          <p class="player__context">
+            <b class="player__song-name">Patience</b>
+            <span class="flex">
+              <span class="player__title">Guns N' Roses</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="./music/y2mate.com - Guns N Roses  Patience.mp3"
+          ></audio>
+        </li>
+
+        <li class="player__song">
+          <img class="player__img img" src="./img/4.webp" alt="cover" />
+          <p class="player__context">
+            <b class="player__song-name">Dawn of victory</b>
+            <span class="flex">
+              <span class="player__title">Rhapsody of fire </span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="./music/y2mate.com - Rhapsody of Fire  Dawn of Victory.mp3"
+          ></audio>
+        </li>
+
+        <li class="player__song">
+          <img class="player__img img" src="./img/5.jpg" alt="cover" />
+          <p class="player__context">
+            <b class="player__song-name">ドラマツルギー</b>
+            <span class="flex">
+              <span class="player__title">Eve MV</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="./music/y2mate.com - ドラマツルギー  Eve  MV.mp3"
+          ></audio>
+        </li>
+
+        <li class="player__song">
+          <img class="player__img img" src="./img/6.jpg" alt="cover" />
+          <p class="player__context">
+            <b class="player__song-name">No lie</b>
+            <span class="flex">
+              <span class="player__title">Dua Lipa</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="./music/y2mate.com - Sean Paul  No Lie ft Dua Lipa.mp3"
+          ></audio>
+        </li>
+
+        <li class="player__song">
+          <img class="player__img img" src="./img/7.png" alt="cover" />
+          <p class="player__context">
+            <b class="player__song-name">Don't Blame Me</b>
+            <span class="flex">
+              <span class="player__title">Taylor Swift</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="./music/y2mate.com - Dont Blame Me.mp3"
+          ></audio>
+        </li>
+
+        <li class="player__song">
+          <img class="player__img img" src="./img/8.jpg" alt="cover" />
+          <p class="player__context">
+            <b class="player__song-name">Cypher 4</b>
+            <span class="flex">
+              <span class="player__title">BTS</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="./music/y2mate.com - BTS Cypher 4.mp3"
+          ></audio>
+        </li>
+
+        <li class="player__song">
+          <img class="player__img img" src="./img/9.jpg" alt="cover" />
+          <p class="player__context">
+            <b class="player__song-name">La vida es un cuadro</b>
+            <span class="flex">
+              <span class="player__title">Leo Rizzi</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="./music/y2mate.com - Leo Rizzi  La vida es un cuadro Live Sessions.mp3.webm"
+          ></audio>
+        </li>
+
+        <li class="player__song">
+          <img class="player__img img" src="./img/10.jpg" alt="cover" />
+          <p class="player__context">
+            <b class="player__song-name">UNO</b>
+            <span class="flex">
+              <span class="player__title">Redemi2</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="./music/y2mate.com - UNO  Redimi2 x Alex Zurdo x Funky Ft Almighty Christian Ponce Ander Bock Video Lyric.mp3"
+          ></audio>
+        </li>
+
+        <li class="player__song">
+          <img class="player__img img" src="./img/11.jpg" alt="cover" />
+          <p class="player__context">
+            <b class="player__song-name">Señor Extraterrestre</b>
+            <span class="flex">
+              <span class="player__title">Penyair</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="./music/y2mate.com - Cuarentemas  Señor Extraterrestre Semana 6  Penyair.mp3"
+          ></audio>
+        </li>
+
+        <li class="player__song">
+          <img class="player__img img" src="./img/12.jpg" alt="cover" />
+          <p class="player__context">
+            <b class="player__song-name">Die for you</b>
+            <span class="flex">
+              <span class="player__title">The Weeknd</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="./music/y2mate.com - The Weeknd  Die For You Official Music Video.mp3.webm"
+          ></audio>
+        </li>
+
+        <li class="player__song">
+          <img class="player__img img" src="./img/13.jpg" alt="cover" />
+          <p class="player__context">
+            <b class="player__song-name">Ride</b>
+            <span class="flex">
+              <span class="player__title">Twenty One Pilots</span>
+              <span class="player__song-time"></span>
+            </span>
+          </p>
+          <audio
+            class="audio"
+            src="./music/y2mate.com - twenty one pilots  Ride Official Video.mp3"
+          ></audio>
+        </li>
+      </ul>
+    </div>
+    <script src="logica.js"></script>
+  </body>
+</html>
